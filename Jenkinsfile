@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'sudo pip install requests'
+                sh 'pip install requests --user --no-cache'
             }
         }
         stage('Test') {
