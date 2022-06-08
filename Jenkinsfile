@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'pip install requests'
+                sh 'sudo pip install requests'
             }
         }
         stage('Test') {
