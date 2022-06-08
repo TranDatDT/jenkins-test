@@ -12,7 +12,9 @@ pipeline {
         stage('Initialize') {
             steps {
                 echo 'Initializing...'
-                sh 'python --version'
+                sh '''python --version
+                whoami
+                '''
             }
         }
         stage('Build') {
